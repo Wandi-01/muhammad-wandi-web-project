@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0d3b2d">
+    <meta name="description" content="Dokumentasi foto dan video kegiatan Festival Kreativitas Mahasiswa 2026">
+    <title>Dokumentasi - Festival Kreativitas Mahasiswa 2026</title>
+    <script>document.documentElement.classList.add('js');</script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigasi -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="Festival Kreativitas Mahasiswa 2026">
+                <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+                    <defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b9f0d4"/><stop offset="1" stop-color="#3fa57e"/></linearGradient></defs>
+                    <rect width="40" height="40" rx="11" fill="url(#lg)"/>
+                    <rect x="11" y="9" width="6.5" height="22" rx="3.2" fill="#0d3b2d"/>
+                    <path d="M17.5 9H27a4 4 0 0 1 4 4v2.500H21.500a4 4 0 0 1-4-4z" fill="#0d3b2d"/>
+                    <rect x="17.500" y="19" width="9" height="5.500" rx="2.700" fill="#0d3b2d"/>
+                </svg>
+                <span class="logo-text"><b>FKM 2026</b><span>Universitas Pamulang</span></span>
+            </a>
+            <button class="nav-toggle" type="button" aria-label="Buka menu" aria-controls="nav-links" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+            <nav aria-label="Menu utama">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="juri.html">Juri</a></li>
+                    <li><a href="jadwal.html">Jadwal</a></li>
+                    <li><a href="dokumentasi.html" class="active" aria-current="page">Dokumentasi</a></li>
+                    <li><a href="registrasi.html" class="btn-nav">Registrasi</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Judul Halaman -->
+    <div class="page-header">
+        <div class="container">
+            <h1>Dokumentasi Kegiatan</h1>
+            <p>Rekaman momen dan suasana Festival Kreativitas Mahasiswa 2026</p>
+        </div>
+    </div>
+
+    <main>
+        <!-- Galeri foto: tambahkan kartu baru dengan menyalin satu blok .doc-card dan menaruh foto di images/dokumentasi/ -->
+        <section class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Foto Kegiatan</h2>
+                    <p>Suasana peserta pada kegiatan Festival Kreativitas Mahasiswa.</p>
+                </div>
+                <div class="grid-2">
+                    <article class="doc-card">
+                        <div class="img-wrapper">
+                            <img src="images/dokumentasi/dokumentasi-1.jpg" alt="Peserta festival berkumpul di aula utama" loading="lazy" width="640" height="480">
+                        </div>
+                        <div class="doc-info">
+                            <h3>Kebersamaan Peserta Festival</h3>
+                            <p>Ratusan mahasiswa dan panitia berkumpul di aula utama pada kegiatan Festival Kreativitas Mahasiswa.</p>
+                        </div>
+                    </article>
+                    <article class="doc-card">
+                        <div class="img-wrapper">
+                            <img src="images/dokumentasi/dokumentasi-2.jpg" alt="Mahasiswa mengikuti sesi kegiatan di ruang auditorium" loading="lazy" width="259" height="194">
+                        </div>
+                        <div class="doc-info">
+                            <h3>Sesi Kegiatan di Auditorium</h3>
+                            <p>Mahasiswa mengikuti rangkaian sesi kegiatan dengan antusias di ruang auditorium.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Video Kegiatan</h2>
+                    <p>Rekaman video kegiatan workshop Festival Kreativitas Mahasiswa.</p>
+                </div>
+                <article class="doc-card video-card">
+                    <div class="video-container">
+                        <video controls preload="metadata" playsinline poster="images/dokumentasi/poster-video.jpg">
+                            <source src="videos/video-workshop.mp4" type="video/mp4">
+                            Browser Anda tidak mendukung pemutaran video HTML5.
+                        </video>
+                    </div>
+                    <div class="doc-info">
+                        <h3>Video Kegiatan Workshop</h3>
+                        <p>Cuplikan video kegiatan workshop dalam rangkaian Festival Kreativitas Mahasiswa 2026 Universitas Pamulang.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; Festival Kreativitas Mahasiswa &ndash; Sistem Informasi &ndash; Universitas Pamulang</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0d3b2d">
+    <meta name="description" content="Formulir registrasi peserta Festival Kreativitas Mahasiswa 2026">
+    <title>Registrasi - Festival Kreativitas Mahasiswa 2026</title>
+    <script>document.documentElement.classList.add('js');</script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigasi -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="Festival Kreativitas Mahasiswa 2026">
+                <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+                    <defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b9f0d4"/><stop offset="1" stop-color="#3fa57e"/></linearGradient></defs>
+                    <rect width="40" height="40" rx="11" fill="url(#lg)"/>
+                    <rect x="11" y="9" width="6.5" height="22" rx="3.2" fill="#0d3b2d"/>
+                    <path d="M17.5 9H27a4 4 0 0 1 4 4v2.500H21.500a4 4 0 0 1-4-4z" fill="#0d3b2d"/>
+                    <rect x="17.500" y="19" width="9" height="5.500" rx="2.700" fill="#0d3b2d"/>
+                </svg>
+                <span class="logo-text"><b>FKM 2026</b><span>Universitas Pamulang</span></span>
+            </a>
+            <button class="nav-toggle" type="button" aria-label="Buka menu" aria-controls="nav-links" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+            <nav aria-label="Menu utama">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="juri.html">Juri</a></li>
+                    <li><a href="jadwal.html">Jadwal</a></li>
+                    <li><a href="dokumentasi.html">Dokumentasi</a></li>
+                    <li><a href="registrasi.html" class="active btn-nav" aria-current="page">Registrasi</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Judul Halaman -->
+    <div class="page-header">
+        <div class="container">
+            <h1>Registrasi Peserta</h1>
+            <p>Lengkapi formulir di bawah ini untuk mendaftar pada FKM 2026</p>
+        </div>
+    </div>
+
+    <main class="section">
+        <div class="container">
+            <div class="card form-wrapper">
+                <form id="form-registrasi" action="#" method="post">
+
+                    <div class="form-header-text">
+                        <h2><i class="fa-solid fa-id-card"></i> Biodata Peserta</h2>
+                        <p class="text-muted">Semua isian bertanda <span class="required-star">*</span> wajib diisi.</p>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="nama">Nama Lengkap <span class="required-star">*</span></label>
+                            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap Anda" autocomplete="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="nim">NIM <span class="required-star">*</span></label>
+                            <input type="text" id="nim" name="nim" placeholder="Masukkan NIM Anda" inputmode="numeric" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email <span class="required-star">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="nama@email.com" autocomplete="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label id="lbl-jk">Jenis Kelamin <span class="required-star">*</span></label>
+                            <div class="radio-inline-group" role="radiogroup" aria-labelledby="lbl-jk">
+                                <label class="radio-label"><input type="radio" name="jenis_kelamin" value="Laki-laki" required> Laki-laki</label>
+                                <label class="radio-label"><input type="radio" name="jenis_kelamin" value="Perempuan" required> Perempuan</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="sesi">Pilihan Sesi <span class="required-star">*</span></label>
+                            <select id="sesi" name="sesi" required>
+                                <option value="">-- Pilih Sesi --</option>
+                                <option value="Sesi 1: Opening &amp; Presentasi (Senin)">Sesi 1: Opening &amp; Presentasi (Senin)</option>
+                                <option value="Sesi 2: Pameran &amp; Awarding (Selasa)">Sesi 2: Pameran &amp; Awarding (Selasa)</option>
+                                <option value="Full Day Pass (Senin &amp; Selasa)">Full Day Pass (Senin &amp; Selasa)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label id="lbl-status">Status Peserta <span class="required-star">*</span></label>
+                            <div class="radio-inline-group" role="radiogroup" aria-labelledby="lbl-status">
+                                <label class="radio-label"><input type="radio" name="status_peserta" value="Mahasiswa Aktif" required> Mahasiswa Aktif</label>
+                                <label class="radio-label"><input type="radio" name="status_peserta" value="Alumni / Umum" required> Alumni / Umum</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pengalaman">Pengalaman atau Minat Bisnis Digital <span class="required-star">*</span></label>
+                        <textarea id="pengalaman" name="pengalaman" rows="4" placeholder="Ceritakan singkat pengalaman atau minat Anda di bidang bisnis digital..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block btn-large"><i class="fa-solid fa-paper-plane"></i> Registrasi</button>
+
+                    <div id="form-success" class="form-success" role="status" aria-live="polite">
+                        <i class="fa-solid fa-circle-check"></i> Registrasi berhasil terkirim. Terima kasih telah mendaftar!
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; Festival Kreativitas Mahasiswa &ndash; Sistem Informasi &ndash; Universitas Pamulang</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

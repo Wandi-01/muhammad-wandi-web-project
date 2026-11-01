@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tugas Pemrograman Web 1 - Muhammad Wandi</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+header {
+    background: #17365d;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+    border-bottom: 4px solid #38bdf8;
+}
+
+header h1 {
+    font-size: 27px;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #dbeafe;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 18px;
+}
+
+.intro {
+    background: white;
+    padding: 22px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    border-left: 5px solid #0284c7;
+}
+
+.intro h2 {
+    color: #17365d;
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+.intro p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+h2.judul {
+    font-size: 21px;
+    margin-bottom: 15px;
+    color: #17365d;
+}
+
+.daftar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 13px;
+}
+
+.item {
+    background: white;
+    padding: 17px;
+    border-radius: 9px;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.item h3 {
+    font-size: 15px;
+    color: #334155;
+}
+
+.item a {
+    text-decoration: none;
+    background: #e0f2fe;
+    color: #0369a1;
+    padding: 7px 13px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.item a:hover {
+    background: #0284c7;
+    color: white;
+}
+
+.uts {
+    margin-top: 28px;
+    padding: 22px;
+    background: #dbeafe;
+    border: 1px solid #bfdbfe;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.uts h2 {
+    color: #17365d;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.uts p {
+    color: #475569;
+    font-size: 13px;
+}
+
+.uts a {
+    background: #17365d;
+    color: white;
+    text-decoration: none;
+    padding: 9px 15px;
+    border-radius: 6px;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background: #17365d;
+    color: #dbeafe;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    .daftar {
+        grid-template-columns: 1fr;
+    }
+
+    .uts {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>MUHAMMAD WANDI</h1>
+    <p>Tugas Pemrograman Web 1</p>
+</header>
+
+<main class="container">
+
+    <section class="intro">
+        <h2>Selamat Datang</h2>
+        <p>Website ini berisi kumpulan tugas praktik Pemrograman Web 1 dari pertemuan 1 sampai 12 serta Ujian Tengah Semester.</p>
+    </section>
+
+    <h2 class="judul">Daftar Tugas Pertemuan</h2>
+
+    <section class="daftar">
+        <div class="item"><h3>Pertemuan 1</h3><a href="PERTEMUAN_1/">Buka</a></div>
+        <div class="item"><h3>Pertemuan 2</h3><a href="PERTEMUAN_2/">Buka</a></div>
+        <div class="item"><h3>Pertemuan 3</h3><a href="PERTEMUAN_3/">Buka</a></div>
+        <div class="item"><h3>Pertemuan 4</h3><a href="PERTEMUAN_4/">Buka</a></div>
+        <div class="item"><h3>Pertemuan 5</h3><a href="PERTEMUAN_5/">Buka</a></div>
+        <div class="item"><h3>Pertemuan 6</h3><a href="PERTEMUAN_6/">Buka</a></div>
+        <div class="item"><h3>Pertemuan 7</h3><a href="PERTEMUAN_7/">Buka</a></div>
+        <div class="item"><h3>Pertemuan 8</h3><a href="PERTEMUAN_8/">Buka</a></div>
+        <div class="item"><h3>Pertemuan 9</h3><a href="PERTEMUAN_9/">Buka</a></div>
+        <div class="item"><h3>Pertemuan 10</h3><a href="PERTEMUAN_10/">Buka</a></div>
+        <div class="item"><h3>Pertemuan 11</h3><a href="PERTEMUAN_11/">Buka</a></div>
+        <div class="item"><h3>Pertemuan 12</h3><a href="PERTEMUAN_12/">Buka</a></div>
+    </section>
+
+    <section class="uts">
+        <div>
+            <h2>Ujian Tengah Semester (UTS)</h2>
+            <p>Kumpulan tugas UTS Pemrograman Web 1.</p>
+        </div>
+        <a href="UTS/">Lihat UTS</a>
+    </section>
+
+</main>
+
+<footer>
+    © 2026 Muhammad Wandi | Pemrograman Web 1
+</footer>
+
+</body>
+</html>

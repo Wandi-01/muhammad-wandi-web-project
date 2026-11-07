@@ -1,0 +1,89 @@
+/* Tampilan halaman */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74b9ff, #a29bfe);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Judul utama */
+h1 {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Kotak aplikasi */
+.container {
+    background-color: white;
+    width: 350px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Judul aplikasi */
+h2 {
+    color: #6c5ce7;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Label */
+label {
+    display: block;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Input */
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #dfe6e9;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+/* Efek input */
+input:focus {
+    outline: none;
+    border-color: #6c5ce7;
+}
+
+/* Tombol */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Efek tombol */
+button:hover {
+    background-color: #4834d4;
+}
+
+/* Hasil */
+#hasil {
+    margin-top: 20px;
+    padding: 12px;
+    text-align: center;
+    color: #2d3436;
+    font-weight: bold;
+    border-radius: 8px;
+}
